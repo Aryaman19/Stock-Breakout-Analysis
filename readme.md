@@ -2,6 +2,8 @@
 
 A web application that analyzes stock breakouts based on volume and price thresholds. The application allows users to analyze historical stock data, identify breakout patterns, and generate detailed reports.
 
+Project Link [https://stock-breakout-analysis.onrender.com](https://stock-breakout-analysis.onrender.com)
+
 ## Features
 
 - Input custom parameters for stock analysis:
@@ -23,12 +25,14 @@ A web application that analyzes stock breakouts based on volume and price thresh
 ## Installation
 
 1. Clone the repository (or create a new directory):
+
 ```bash
 git clone https://github.com/Aryaman19/Stock-Breakout-Analysis.git
 cd Stock-Breakout-Analysis
 ```
 
 2. Create a virtual environment:
+
 ```bash
 # Create virtual environment
 python -m venv .venv
@@ -41,6 +45,7 @@ source .venv/bin/activate
 ```
 
 3. Install required packages:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -59,10 +64,13 @@ stock_analysis/
 
 1. Make sure your virtual environment is activated
 2. Run the Flask application:
+
 ```bash
 python app.py
 ```
+
 3. Open your web browser and navigate to:
+
 ```
 http://localhost:5000
 ```
@@ -70,6 +78,7 @@ http://localhost:5000
 ## Using the Application
 
 1. Enter Analysis Parameters:
+
    - Input the stock ticker symbol (e.g., AAPL, MSFT)
    - Select start and end dates for analysis
    - Set volume threshold (e.g., 200 for 200% of average)
@@ -77,10 +86,12 @@ http://localhost:5000
    - Set holding period in days
 
 2. Generate Analysis:
+
    - Click "Generate Report" button
    - Wait for analysis to complete (loading spinner will appear)
 
 3. View Results:
+
    - Summary statistics will be displayed
    - Detailed breakout analysis shown in table format
 
@@ -106,12 +117,13 @@ http://localhost:5000
 ## Analysis Methodology
 
 The application identifies stock breakouts based on two main criteria:
+
 1. Volume exceeding a specified percentage of the 20-day moving average
 2. Price increase exceeding a specified percentage on the breakout day
 
 For each identified breakout, the application:
+
 - Records entry price and date
 - Calculates exit price after specified holding period
 - Computes return on investment
 - Generates summary statistics
-
