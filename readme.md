@@ -24,7 +24,8 @@ A web application that analyzes stock breakouts based on volume and price thresh
 
 1. Clone the repository (or create a new directory):
 ```bash
-git clone 
+git clone https://github.com/Aryaman19/Stock-Breakout-Analysis.git
+cd Stock-Breakout-Analysis
 ```
 
 2. Create a virtual environment:
